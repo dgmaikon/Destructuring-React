@@ -20,9 +20,4 @@ const cars = [
   },
 ];
 
-function useCars(car) {
-  return [car.model];
-}
-
 export default cars;
-export { useCars };

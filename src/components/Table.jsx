@@ -1,17 +1,8 @@
 import React, { useState } from "react";
-import animals, { useAnimals } from "./data";
-import cars, { useCars } from "./practice";
+import ReactDom from "react-dom";
+import cars from "./practice";
 
 const [Honda, Tesla] = cars;
-const [cat, dog] = animals;
-
-/* const {
-  feedingRequirements: { food, water },
-} = cat; */
-
-/* const [animal, makeSound] = useAnimals(cat);
-console.log(animal);
-makeSound(); */
 
 const {
   speedStats: { topSpeed: hondaTopSpeed },
@@ -20,10 +11,8 @@ const {
 
 const {
   speedStats: { topSpeed: teslaTopSpeed },
-  teslaTopColour,
+  coloursByPopularity: [teslaTopColour],
 } = Tesla;
-
-/* const [car] = useCars(Honda); */
 
 function Table() {
   return (
